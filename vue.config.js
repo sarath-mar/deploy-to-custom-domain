@@ -3,11 +3,11 @@ module.exports = defineConfig({
   transpileDependencies: true
 })
 
-module.exports = {
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/deploy-to-custom-domain/'
-    : '/' 
-}
 // module.exports = {
-//   publicPath: '/'
+//   publicPath: process.env.NODE_ENV === 'production'
+//     ? '/deploy-to-custom-domain/'
+//     : '/' 
 // }
+module.exports = {
+  publicPath: '/'
+}
